@@ -16,7 +16,7 @@ public class Applications extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        //初始化 聚合数据SDK
+        //初始化 聚合数据SDK.用SDK 的话这样能省去好多东西
         JuheSDKInitializer.initialize(getApplicationContext());
     }
 }
