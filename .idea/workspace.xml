@@ -6,62 +6,8 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3f10e2f-fab5-4f4c-b542-ee3efc49fd08" name="Default" comment="add&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/btn_return_list.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/libs/juhe_sdk_v_2_7.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/support/android/zzh/Applications.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/support/android/zzh/activity/BaseActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/support/android/zzh/activity/BaseFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/support/android/zzh/CheeseDetailActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/support/android/zzh/CheeseListFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/support/android/zzh/Cheeses.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/support/android/zzh/adapter/HomeAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/support/android/zzh/activity/home/HomeFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/support/android/zzh/adapter/JokeAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/support/android/zzh/activity/home/JokeFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/support/android/zzh/activity/personal/LoginActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/support/android/zzh/activity/MainActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/support/android/zzh/adapter/NewsAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/support/android/zzh/activity/home/NewsFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/support/android/zzh/adapter/VideoAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/support/android/zzh/activity/home/VideoFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/support/android/zzh/activity/right/WeatherActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_home_right_tab_weather.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/libs/arm64-v8a/libJuheSDK_v_1_2.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/libs/armeabi/libJuheSDK_v_1_2.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/libs/armeabi-v7a/libJuheSDK_v_1_2.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/libs/mips/libJuheSDK_v_1_2.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/libs/mips64/libJuheSDK_v_1_2.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/libs/x86/libJuheSDK_v_1_2.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/libs/x86_64/libJuheSDK_v_1_2.so" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/.gitignore" afterPath="" />
-    </list>
-    <list id="5e64f083-f6b9-4bfe-94e6-b47f0ac3c012" name="Rejected commit: Default" comment="add&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/top_back.png" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/support/android/designlibdemo/CheeseDetailActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/support/android/designlibdemo/CheeseListFragment.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/support/android/designlibdemo/Cheeses.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/support/android/designlibdemo/activity/BaseActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/support/android/designlibdemo/activity/BaseFragment.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/support/android/designlibdemo/activity/MainActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/support/android/designlibdemo/activity/home/HomeFragment.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/support/android/designlibdemo/activity/home/JokeFragment.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/support/android/designlibdemo/activity/home/NewsFragment.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/support/android/designlibdemo/activity/home/VideoFragment.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/support/android/designlibdemo/activity/personal/LoginActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/support/android/designlibdemo/adapter/HomeAdapter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/support/android/designlibdemo/adapter/JokeAdapter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/support/android/designlibdemo/adapter/NewsAdapter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/support/android/designlibdemo/adapter/VideoAdapter.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/menu/drawer_view.xml" afterPath="$PROJECT_DIR$/app/src/main/res/menu/drawer_view.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/menu/sample_actions.xml" afterPath="$PROJECT_DIR$/app/src/main/res/menu/sample_actions.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-    </list>
+    <list default="true" id="a3f10e2f-fab5-4f4c-b542-ee3efc49fd08" name="Default" comment="add&#10;" />
+    <list id="5e64f083-f6b9-4bfe-94e6-b47f0ac3c012" name="Rejected commit: Default" comment="add&#10;" />
     <ignored path="Zuuuuuuuu.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
