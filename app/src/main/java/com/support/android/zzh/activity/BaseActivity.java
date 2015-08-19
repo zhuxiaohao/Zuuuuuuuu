@@ -20,6 +20,18 @@ public class BaseActivity extends AppCompatActivity {
         mcontext = this;
     }
 
+    /**
+     * 省去 findviewbyid
+     *
+     * @param viewId
+     * @param <T>
+     *
+     * @return
+     */
+    public <T> T $(int viewId) {
+        return (T) findViewById(viewId);
+    }
+
     public void initView() {
 
     }

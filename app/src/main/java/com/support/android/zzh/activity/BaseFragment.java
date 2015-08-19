@@ -16,7 +16,6 @@ public class BaseFragment extends Fragment {
      * 上下文
      */
     private Context mcontext;
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

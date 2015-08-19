@@ -20,8 +20,7 @@
         <!--聚合数据 openid-->
         <meta-data
             android:name="com.thinkland.juheapi.openid"
-            android:value="JH57f8c6596ad334c9d573cdd0dd1fd471"
-            />
+            android:value="JH57f8c6596ad334c9d573cdd0dd1fd471" />
 
         <activity android:name="com.support.android.zzh.activity.MainActivity">
             <intent-filter>
