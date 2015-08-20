@@ -1,8 +1,8 @@
 package com.support.android.zzh.adapter;
 
-import com.support.android.zzh.CheeseDetailActivity;
 import com.support.android.designlibdemo.R;
 import com.support.android.designlibdemo.R.layout;
+import com.support.android.zzh.CheeseDetailActivity;
 
 import android.content.Context;
 import android.content.Intent;
@@ -24,9 +24,10 @@ import android.widget.TextView;
 public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder> {
 
 
-    public HomeAdapter(Context context){
+    public HomeAdapter(Context context) {
 
     }
+
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
         View view = LayoutInflater.from(viewGroup.getContext()).inflate(layout.layout_home_frist_list_item, viewGroup, false);
@@ -57,11 +58,16 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder> {
         private final TextView mtextView;
         private final View view;
 
+        /**
+         * item view
+         *
+         * @param itemView
+         */
         public ViewHolder(View itemView) {
             super(itemView);
             view = itemView;
-            mimageView=(ImageView)itemView.findViewById(R.id.avatar);
-            mtextView=(TextView)itemView.findViewById(R.id.text1);
+            mimageView = (ImageView) itemView.findViewById(R.id.avatar);
+            mtextView = (TextView) itemView.findViewById(R.id.text1);
         }
     }
 }

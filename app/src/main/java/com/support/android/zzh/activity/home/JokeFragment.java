@@ -33,15 +33,13 @@ public class JokeFragment extends BaseFragment {
     private RecyclerView rv;
     private JokeAdapter madapter;
     private Context mContext;
-    private List<JokeBeanInfo> list=new java.util.ArrayList<JokeBeanInfo>();
-    private int page = 1;
-    private int pagesize = 20;
+    private List<JokeBeanInfo> list = new java.util.ArrayList<JokeBeanInfo>();
+
     private String key;
 
     @Override
     public void onCreate(android.os.Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mContext = getActivity();
 
     }
 
@@ -71,24 +69,12 @@ public class JokeFragment extends BaseFragment {
         long time = date.getTime();
         String dateline = time + "";
         dateline = dateline.substring(0, 10);
-        /**
-         * 请不要添加key参数.
-         */
+
         final Parameters params = new Parameters();
-        params.add("sort", "");
         params.add("page", page);
         params.add("pagesize", pagesize);
-        params.add("time", 1418816972);
-        /**
-         * 请求的方法 参数: 第一个参数 当前请求的context;
-         * 				  第二个参数 接口id;
-         * 				  第三个参数 接口请求的url;
-         * 				  第四个参数 接口请求的方式;
-         * 				  第五个参数 接口请求的参数,键值对com.thinkland.sdk.android.Parameters类型;
-         * 				  第六个参数请求的回调方法,com.thinkland.sdk.android.DataCallBack;
-         *
-         */
-        JuheData.executeWithAPI(mContext, 95, "http://japi.juhe.cn/joke/content/list.from",
+
+        JuheData.executeWithAPI(mContext, 95, "http://japi.juhe.cn/joke/content/text.from",
                 JuheData.GET, params, new DataCallBack() {
                     /**
                      * 请求成功时调用的方法 statusCode为http状态码,responseString为请求返回数据.
@@ -129,6 +115,13 @@ public class JokeFragment extends BaseFragment {
                     }
                 });
 
+    }
+
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        JuheData.cancelRequests(mContext);
     }
 
     /**

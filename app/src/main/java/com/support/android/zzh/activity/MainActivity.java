@@ -177,9 +177,9 @@ public class MainActivity extends BaseActivity {
     private void setupViewPager(ViewPager viewPager) {
         Adapter adapter = new Adapter(getSupportFragmentManager());
         adapter.addFragment(new com.support.android.zzh.activity.home.HomeFragment(), "首页");
-        adapter.addFragment(new com.support.android.zzh.activity.home.JokeFragment(), "视频");
+        adapter.addFragment(new com.support.android.zzh.activity.home.JokeFragment(), "笑话");
         adapter.addFragment(new com.support.android.zzh.activity.home.NewsFragment(), "段子");
-        adapter.addFragment(new com.support.android.zzh.activity.home.VideoFragment(), "笑话");
+        adapter.addFragment(new com.support.android.zzh.activity.home.VideoFragment(), "视频");
         viewPager.setAdapter(adapter);
     }
 
