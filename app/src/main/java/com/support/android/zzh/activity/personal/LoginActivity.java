@@ -1,7 +1,8 @@
 package com.support.android.zzh.activity.personal;
 
+import com.support.android.zzh.activity.BaseActivity;
+
 import android.os.Bundle;
-import android.os.PersistableBundle;
 
 /**
  * Project Name:com.support.android.designlibdemo.activity
@@ -10,12 +11,13 @@ import android.os.PersistableBundle;
  * blog:http://blog.csdn.net/qq718799510?viewmode=contents
  * Copyright (c) 2015, zhuxiaohao All Rights Reserved.
  */
-public  class LoginActivity extends com.support.android.zzh.activity.BaseActivity {
+public  class LoginActivity extends BaseActivity {
     @Override
-    public void onCreate(Bundle savedInstanceState, PersistableBundle persistentState) {
-        super.onCreate(savedInstanceState, persistentState);
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
 
     }
+
 
 
 }

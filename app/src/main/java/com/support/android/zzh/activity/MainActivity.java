@@ -18,6 +18,10 @@ package com.support.android.zzh.activity;
 
 import com.support.android.designlibdemo.R;
 import com.support.android.zzh.CheeseDetailActivity;
+import com.support.android.zzh.activity.home.HomeFragment;
+import com.support.android.zzh.activity.home.JokeFragment;
+import com.support.android.zzh.activity.home.NewsFragment;
+import com.support.android.zzh.activity.home.VideoFragment;
 import com.support.android.zzh.activity.right.WeatherActivity;
 
 import java.util.ArrayList;
@@ -176,10 +180,10 @@ public class MainActivity extends BaseActivity {
      */
     private void setupViewPager(ViewPager viewPager) {
         Adapter adapter = new Adapter(getSupportFragmentManager());
-        adapter.addFragment(new com.support.android.zzh.activity.home.HomeFragment(), "首页");
-        adapter.addFragment(new com.support.android.zzh.activity.home.JokeFragment(), "笑话");
-        adapter.addFragment(new com.support.android.zzh.activity.home.NewsFragment(), "段子");
-        adapter.addFragment(new com.support.android.zzh.activity.home.VideoFragment(), "视频");
+        adapter.addFragment(new HomeFragment(), "首页");
+        adapter.addFragment(new JokeFragment(), "笑话");
+        adapter.addFragment(new NewsFragment(), "段子");
+        adapter.addFragment(new VideoFragment(), "视频");
         viewPager.setAdapter(adapter);
     }
 

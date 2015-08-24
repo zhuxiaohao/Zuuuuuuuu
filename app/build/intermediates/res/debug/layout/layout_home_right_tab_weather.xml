@@ -1,49 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout
-    android:orientation="vertical"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/main_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true">
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
 
     <RelativeLayout
-        android:background="@color/top_bg"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="@color/top_bg">
 
         <ImageView
             android:id="@+id/iv_left_return"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@mipmap/top_back"/>
+
         <TextView
-            android:textColor="@android:color/white"
-            android:text="天气预报"
-            android:layout_centerInParent="true"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="天气预报"
+            android:textColor="@android:color/white"/>
     </RelativeLayout>
 
 
-    <LinearLayout
-        style="@style/Widget.CardContent"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swiperrefreshlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
 
-        <TextView
+        <LinearLayout
+            style="@style/Widget.CardContent"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Friends"
-            android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+            android:layout_height="wrap_content">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/cheese_ipsum"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Friends"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
 
-    </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""/>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
 
 </LinearLayout><!-- From: file:/Users/chenhao/androidStudioCode/Zuuuuuuuu/app/src/main/res/layout/layout_home_right_tab_weather.xml -->

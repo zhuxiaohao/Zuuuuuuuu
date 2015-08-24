@@ -9,11 +9,12 @@ import com.thinkland.sdk.android.DataCallBack;
 import com.thinkland.sdk.android.JuheData;
 import com.thinkland.sdk.android.Parameters;
 
-import java.util.Date;
 import java.util.List;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.support.v4.widget.SwipeRefreshLayout;
+import android.support.v4.widget.SwipeRefreshLayout.OnRefreshListener;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -34,11 +35,10 @@ public class JokeFragment extends BaseFragment {
     private JokeAdapter madapter;
     private Context mContext;
     private List<JokeBeanInfo> list = new java.util.ArrayList<JokeBeanInfo>();
-
-    private String key;
+    SwipeRefreshLayout swiperefreshlayout;
 
     @Override
-    public void onCreate(android.os.Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
     }
@@ -46,10 +46,26 @@ public class JokeFragment extends BaseFragment {
     @android.support.annotation.Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        rv = (RecyclerView) inflater.inflate(R.layout.layout_home_joke, container, false);
+        View view = inflater.inflate(R.layout.layout_home_joke, container, false);
+        rv = (RecyclerView) view.findViewById(R.id.recyclerview);
+        swiperefreshlayout=(SwipeRefreshLayout)view.findViewById(R.id.swiperefreshlayout);
+        swiperefreshlayout.setColorScheme(android.R.color.holo_red_light, android.R.color.holo_green_light,
+                android.R.color.holo_blue_bright, android.R.color.holo_orange_light);
+        swiperefreshlayout.setRefreshing(true);
+        swiperefreshlayout.setOnRefreshListener(new OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                // TODO Auto-generated method stub
+                new android.os.Handler().postDelayed(new Runnable() {
+                    public void run() {
+                        swiperefreshlayout.setRefreshing(false);
+
+                    }
+                }, 5000);
+            }
+        });
         update();
         setupRecyclerView(rv);
-//       updatePhone();
         return rv;
     }
 
@@ -64,12 +80,6 @@ public class JokeFragment extends BaseFragment {
      * 获取请求数据
      */
     private void update() {
-
-        Date date = new Date();
-        long time = date.getTime();
-        String dateline = time + "";
-        dateline = dateline.substring(0, 10);
-
         final Parameters params = new Parameters();
         params.add("page", page);
         params.add("pagesize", pagesize);
@@ -90,28 +100,13 @@ public class JokeFragment extends BaseFragment {
                             e.printStackTrace();
                         }
                     }
-
-                    /**
-                     * 请求完成时调用的方法,无论成功或者失败都会调用.
-                     */
                     @Override
                     public void onFinish() {
                         // TODO Auto-generated method stub
-                        Toast.makeText(mContext, "finish", Toast.LENGTH_SHORT).show();
-
                     }
-
-                    /**
-                     * 请求失败时调用的方法,statusCode为http状态码,throwable为捕获到的异常
-                     * statusCode:30002 没有检测到当前网络.
-                     * 			  30003 没有进行初始化.
-                     * 			  0 未明异常,具体查看Throwable信息.
-                     * 			  其他异常请参照http状态码.
-                     */
                     @Override
                     public void onFailure(int statusCode, String responseString, Throwable throwable) {
                         // TODO Auto-generated method stub
-//                      tv.append(throwable.getMessage() + "\n");
                     }
                 });
 

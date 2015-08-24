@@ -19,7 +19,7 @@ import android.view.ViewGroup;
  * Copyright (c) 2015, zhuxiaohao All Rights Reserved.
  * 新闻
  */
-public class NewsFragment extends BaseFragment {
+public class  NewsFragment extends BaseFragment {
     private RecyclerView rv;
     private NewsAdapter madapter;
     private Context context;
